@@ -95,12 +95,10 @@ history = model.fit(gray_img, gray_dst_opencv, epochs=100, batch_size=32)
 model.save_weights('denoise_sample.weights.h5')
 #model.load_weights('denoise_sample.weights.h5')
 denoise_images = model.predict(gray_img)
-# Enhanced image
+
 
 plt.imshow(gray_img[0])  # Use index 0 for the first image
 plt.show()
-# Enhanced image
-
 plt.imshow(denoise_images[0])  # Use index 0 for the first image
 plt.show()
 
